@@ -8,8 +8,8 @@
   "public_observations": 7320,
   "files": {
     ".gitattributes": {
-      "bytes": 246,
-      "sha256": "1b68d317bb7ee0fca6db9fda0f5113c5f88f6a6266e82fdfe5be8c084c7ec63c"
+      "bytes": 253,
+      "sha256": "eb810db4b64b36454fc506d4412902677d7eefe777ad84fdf6aaccf03dd1b06c"
     },
     ".github/workflows/checks.yml": {
       "bytes": 574,
