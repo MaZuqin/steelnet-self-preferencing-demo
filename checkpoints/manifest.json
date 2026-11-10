@@ -1,0 +1,26 @@
+{
+  "models": [
+    {
+      "method": "happo",
+      "file": "checkpoints/happo.pt",
+      "sha256": "07f210818d11367c1e1c75cf9af1f9b96a2437ac760690c649ab12a2da0275eb",
+      "policy_seed": 2026,
+      "hidden_size": 64,
+      "final_HAPPO_extra_PPO_iterations": 14,
+      "fixed_baseline": false
+    },
+    {
+      "method": "mappo",
+      "file": "checkpoints/mappo.pt",
+      "sha256": "684711be95b34b9e28f641b396f354a2990cf36a77f2999399d0a66b62213259",
+      "policy_seed": 2026,
+      "hidden_size": 64,
+      "final_HAPPO_extra_PPO_iterations": 0,
+      "fixed_baseline": true
+    }
+  ],
+  "tensor_and_checkpoint_content_preserved": true,
+  "data_used_for_model_selection": "synthetic training/validation demand only",
+  "real20_role": "evaluation",
+  "comparison": "final HAPPO policy versus fixed MAPPO and a causal heuristic"
+}

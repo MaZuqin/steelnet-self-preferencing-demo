@@ -1,0 +1,8 @@
+# Exact direct dependency versions used for the release checks (Python 3.12).
+# Install a CPU or CUDA PyTorch distribution appropriate to your machine.
+numpy==2.4.3
+pandas==3.0.1
+matplotlib==3.10.8
+PyYAML==6.0.1
+torch==2.11.0
+openpyxl==3.1.5

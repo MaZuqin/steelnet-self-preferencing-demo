@@ -1,0 +1,14 @@
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.csv text eol=lf
+*.json text eol=lf
+*.pt binary
+*.npz binary
+*.xlsx binary
+*.png binary
+
+# Preserve the public source data byte for byte.
+demand/data/*.csv -text

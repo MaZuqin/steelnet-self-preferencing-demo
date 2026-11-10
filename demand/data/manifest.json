@@ -1,0 +1,49 @@
+{
+  "dataset_id": "real20-366",
+  "n_paths": 20,
+  "observations_per_path": 366,
+  "observations": 7320,
+  "day_index": {
+    "min": 0,
+    "max": 365,
+    "meaning": "sequence index, not a verified calendar date"
+  },
+  "path_columns": [
+    "path_01",
+    "path_02",
+    "path_03",
+    "path_04",
+    "path_05",
+    "path_06",
+    "path_07",
+    "path_08",
+    "path_09",
+    "path_10",
+    "path_11",
+    "path_12",
+    "path_13",
+    "path_14",
+    "path_15",
+    "path_16",
+    "path_17",
+    "path_18",
+    "path_19",
+    "path_20"
+  ],
+  "scale_divisor": 1000.0,
+  "input_units": "source workbook units; physical unit not specified in workbook",
+  "provenance": "Author-provided processed demand paths. Manuscript attributes underlying material to 2025 steel orders from China Steel Network; raw acquisition and path-construction scripts are not part of this snapshot.",
+  "release_scope": "All 20 paths, explicitly confirmed by the author.",
+  "role": "final evaluation only; not used for training or hyperparameter search",
+  "files": {
+    "real_20.xlsx": {
+      "sha256": "edc5cae8c20027d5be7c4c3c69f3b485dfaf710c1b7f76990337c3d732dff2ac"
+    },
+    "real_demand_wide.csv": {
+      "sha256": "4fe5526a21846a6970320c90755c5061c5af392b7f549383939b9b1fa379a523"
+    },
+    "real_demand_long.csv": {
+      "sha256": "48ba3cf80a0105976fa0fe87c4041d9af1a2010e81bd7847a9d397fade477583"
+    }
+  }
+}

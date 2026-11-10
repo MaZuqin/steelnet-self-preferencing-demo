@@ -1,0 +1,84 @@
+{
+  "protocol": {
+    "environment": {
+      "horizon": 366,
+      "lead_time": [
+        1,
+        2,
+        0
+      ],
+      "initial_inventory": [
+        0,
+        0,
+        0
+      ],
+      "holding_cost": [
+        100,
+        20,
+        20
+      ],
+      "backlog_cost": [
+        300,
+        200,
+        200
+      ],
+      "obs_scale": 1000,
+      "paper_observation": true,
+      "include_purchase_cost_in_reward": false,
+      "random_shipping_loss": false
+    },
+    "policy": {
+      "hidden_size": 64,
+      "order_max": 220,
+      "supplier_order_max": 220,
+      "alpha": {
+        "happo": 0.2,
+        "mappo": 0.7
+      }
+    },
+    "heuristic": {
+      "forecast_window": 14,
+      "safety_z": 1.645,
+      "beta_fallback": 0.5,
+      "sme_min_share": 0.0,
+      "platform_review_period": null,
+      "le_review_period": null,
+      "sme_review_period": null
+    },
+    "evaluation": {
+      "gamma": 0.99,
+      "synthetic_seeds": [
+        3026,
+        3027
+      ],
+      "paths": 20,
+      "policy_seed": 2026
+    }
+  },
+  "split": "test",
+  "device": "cuda",
+  "seeds": [
+    2026
+  ],
+  "methods": [
+    "happo",
+    "mappo",
+    "heuristic"
+  ],
+  "scenarios": [
+    "stationary",
+    "stochastic_jump",
+    "real20"
+  ],
+  "paths_per_scenario": 20,
+  "horizon": 366,
+  "gamma": 0.99,
+  "primary_metric": "discounted_total_cost",
+  "checkpoint_sha256": {
+    "happo": "07f210818d11367c1e1c75cf9af1f9b96a2437ac760690c649ab12a2da0275eb",
+    "mappo": "684711be95b34b9e28f641b396f354a2990cf36a77f2999399d0a66b62213259"
+  },
+  "comparison": "final HAPPO versus fixed MAPPO and causal heuristic",
+  "training_performed": false,
+  "elapsed_seconds": 170.138
+}

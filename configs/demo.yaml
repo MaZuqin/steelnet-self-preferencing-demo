@@ -1,0 +1,44 @@
+environment:
+  horizon: 366
+  lead_time:
+  - 1
+  - 2
+  - 0
+  initial_inventory:
+  - 0
+  - 0
+  - 0
+  holding_cost:
+  - 100
+  - 20
+  - 20
+  backlog_cost:
+  - 300
+  - 200
+  - 200
+  obs_scale: 1000
+  paper_observation: true
+  include_purchase_cost_in_reward: false
+  random_shipping_loss: false
+policy:
+  hidden_size: 64
+  order_max: 220
+  supplier_order_max: 220
+  alpha:
+    happo: 0.2
+    mappo: 0.7
+heuristic:
+  forecast_window: 14
+  safety_z: 1.645
+  beta_fallback: 0.5
+  sme_min_share: 0.0
+  platform_review_period: null
+  le_review_period: null
+  sme_review_period: null
+evaluation:
+  gamma: 0.99
+  synthetic_seeds:
+  - 3026
+  - 3027
+  paths: 20
+  policy_seed: 2026
